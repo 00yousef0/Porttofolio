@@ -1,0 +1,549 @@
+/* نمط أساسي */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: rgb(235, 60, 118);
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    height: 100vh;
+    background-image: url("../imgs/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    color: white;
+    margin: 0;
+    float: left;
+}
+
+.logo span {
+    color: var(--main-color);
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+    max-width: 1200px;
+}
+
+
+
+header ul {
+    float: right;
+    margin: 0;
+    padding-left: 0;
+    padding-top: 1.3%;
+    list-style: none;
+}
+
+header ul li {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+header ul li:hover {
+    color: var(--main-color);
+}
+
+nav {
+    padding: 20px 0;
+}
+
+header ul li a {
+    color: #fff;
+    font-size: 20px;
+}
+
+.intro {
+    padding-left: 25%;
+    padding-top: 15%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.intro h1 {
+    margin: 5px;
+    color: var(--main-color);
+}
+
+.intro p {
+    margin: 2.5px 0;
+}
+
+.intro .small-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.intro .sub-title {
+    font-size: 26px;
+}
+
+.intro .sub-title span {
+    color: var(--main-color);
+}
+
+.intro a {
+    padding: 8px;
+    background-color: var(--main-color);
+    border: 5px solid var(--main-color);
+    border-radius: 15px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-top: 16px;
+}
+
+/* مشروعاتي */
+.my-projects {
+    background-color: #212121;
+    padding: 20px 20px 30px 20px;
+}
+
+.my-projects .title {
+    font-size: 40px;
+    margin: 5px 0 9px 0;
+    color: white;
+    text-align: center;
+}
+
+.my-projects .sub_title {
+    margin: 0 0 10px 0;
+    color: var(--main-color);
+    text-align: center;
+    position: relative;
+}
+
+.my-projects .sub_title::after,
+.my-projects .sub_title::before {
+    content: "";
+    width: 3%;
+    height: 1.5px;
+    position: absolute;
+    bottom: 15px;
+    background-color: #FFF;
+}
+
+.my-projects .sub_title::after {
+    right: 37%;
+}
+
+.my-projects .sub_title::before {
+    left: 37%;
+}
+
+.my-projects img {
+    width: 80%;
+    margin: 2.5% 10%;
+}
+
+
+
+.my-projects p {
+    font-size: 18px;
+    margin: 1% 12% 0 12%;
+    color: #FFF;
+}
+
+.projects h1 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+    color: var(--main-color);
+}
+
+/* حول */
+.about {
+    padding: 80px 0;
+    background-color: rgb(209, 209, 209);
+    margin: 20px 0;
+}
+
+.about .title {
+    font-size: 40px;
+    margin: 5px 0 9px 0;
+    text-align: center;
+}
+
+.about .sub_title {
+    margin: 0 0 10px 0;
+    color: var(--main-color);
+    text-align: center;
+    position: relative;
+}
+
+.about .sub_title::after,
+.about .sub_title::before {
+    content: "";
+    width: 10%;
+    height: 1.5px;
+    position: absolute;
+    bottom: 6px;
+    background-color: black;
+}
+
+.about .sub_title::after {
+    right: 35%;
+}
+
+.about .sub_title::before {
+    left: 35%;
+}
+
+.text h3 span {
+    color: var(--main-color);
+}
+
+.image {
+    width: 100%;
+    text-align: center;
+}
+
+.image img {
+    height: auto;
+    max-width: 100%;
+}
+
+.content {
+    padding: 0 12%;
+}
+
+.about .text h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 35px;
+}
+
+.about .text p {
+    line-height: 1.4;
+    font-weight: bolder;
+}
+
+.line {
+    width: 100%;
+    height: 100px;
+    background-color: #212121;
+    margin: 0;
+}
+
+/* مهاراتي */
+.my-skills {
+    padding: 40px 0;
+    background-color: #121212;
+}
+
+.my-skills .title {
+    font-size: 2.3em;
+    margin-bottom: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.my-skills .subtitle {
+    margin: 10px;
+    color: var(--main-color) !important;
+    font-size: 18px !important;
+    text-align: center;
+    position: relative;
+}
+
+.my-skills .subtitle::after,
+.my-skills .subtitle::before {
+    content: "";
+    width: 2%;
+    height: 1.5px;
+    position: absolute;
+    bottom: 8px;
+    background-color: #FFF;
+}
+
+.my-skills .subtitle::after {
+    right: 40.3%;
+}
+
+.my-skills .subtitle::before {
+    right: 57.7%;
+}
+
+.skills- .p {
+    margin: 10px;
+    width: 30%;
+    display: inline-block;
+    color: #fff;
+    background-color: #212121;
+    text-align: center;
+    box-shadow: 5px 5px 10px var(--main-color);
+    border: 2px solid var(--main-color);
+    border-radius: 30px;
+}
+
+.skills- .p .skills-son {
+    display: block;
+    padding: 10px;
+    background-color: #212121;
+    width: 80%;
+    margin: auto;
+    box-shadow: none;
+}
+
+.my-skills .skills- {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.my-skills .skills- i {
+    font-size: 30px;
+    color: var(--main-color);
+}
+
+.svg {
+    width: 30px;
+    color: var(--main-color);
+}
+
+/* خدماتي */
+.Ms {
+    padding: 40px 0;
+    background-color: #121212;
+}
+
+.Ms .title {
+    font-size: 2.3em;
+    margin-bottom: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.Ms .subtitle {
+    margin: 10px;
+    color: var(--main-color) !important;
+    font-size: 18px !important;
+    text-align: center;
+    position: relative;
+}
+
+.Ms .subtitle::after,
+.Ms .subtitle::before {
+    content: "";
+    width: 3%;
+    height: 1.5px;
+    position: absolute;
+    bottom: 8px;
+    background-color: #FFF;
+}
+
+.Ms .subtitle::after {
+    right: 41%;
+}
+
+.Ms .subtitle::before {
+    right: 56%;
+}
+
+.os div {
+    margin: 5px;
+    width: 100%;
+    display: block;
+    color: #fff;
+    background-color: #212121;
+    text-align: center;
+    border: 2px solid #121212;
+    border-radius: 15px;
+}
+
+.os div .son {
+    display: block;
+    padding: 10px;
+    background-color: #212121;
+    width: 80%;
+    margin: auto;
+    border: none;
+}
+
+.Ms .os {
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    /* لتجنب تجاوز العناصر لحدود الحاوية */
+    justify-content: center;
+    /* لمركزة العناصر أفقيًا */
+    gap: 10px;
+    /* لإضافة مسافة بين العناصر */
+}
+
+.Ms .os div {
+    flex: 1 1 30%;
+    /* لجعل العناصر تأخذ 30% من عرض الحاوية وتكون مرنة */
+    margin: 10px;
+    /* لإضافة مسافة حول العناصر */
+    box-sizing: border-box;
+    /* لضمان أن الهوامش والحشوات لا تؤثر على العرض الكلي للعناصر */
+}
+
+.son {
+    margin: 0 10% !important;
+}
+
+.Ms .os i {
+    font-size: 30px;
+    color: var(--main-color);
+}
+
+.contact {
+    padding: 40px 0 100px;
+    text-align: center;
+}
+
+.contact .title {
+    color: #121212;
+    margin: 0 0 5px 0;
+}
+
+.contact .subtitle {
+    margin: 0 0 10px 0;
+    color: var(--main-color);
+    position: relative;
+}
+
+.contact .subtitle::after,
+.contact .subtitle::before {
+    content: "";
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    bottom: 8px;
+    background-color: black;
+}
+
+.contact .subtitle::after {
+    right: 44.5%;
+}
+
+.contact .subtitle::before {
+    left: 44.5%;
+}
+
+.contact .text {
+    margin: 0 auto;
+    text-align: left;
+    width: 80%;
+}
+
+.contact .text h4 {
+    display: inline-block;
+    text-align: left;
+}
+
+.contact .text i {
+    color: var(--main-color)
+}
+
+.contact .text .item {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.contact .text .item .icon,
+.contact .text .item .discraption {
+    float: left;
+}
+
+.discraption p {
+    margin: 0;
+}
+
+.discraption p small {
+    font-size: 12px;
+}
+
+.contact .text .item .icon {
+    padding: 10px 10px 10px 0;
+}
+
+.cont {
+    background-color: #212121;
+    margin: 0 40px 40px;
+    padding: 40px 20px;
+}
+
+.contact .item div p,
+.contact .title,
+.text h3,
+.text p {
+    color: #fff;
+}
+
+.cont .title {
+    padding: 40px 0 0 0;
+}
+
+/* استعلامات الوسائط (Media Queries) */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header ul {
+        float: none;
+        text-align: center;
+    }
+
+    header ul li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .intro {
+        padding-left: 10%;
+        padding-top: 25%;
+    }
+
+    .intro .small-title,
+    .intro .sub-title {
+        text-align: center;
+    }
+
+    .my-projects img {
+        width: 100%;
+        margin: 2.5% 0;
+    }
+
+    .my-projects p {
+        font-size: 16px;
+        margin: 1% 5% 0 5%;
+    }
+
+    .about {
+        padding: 40px 0;
+    }
+
+    .image,
+    .content {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact .text {
+        width: 100%;
+    }
+
+    .contact .text .item {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
